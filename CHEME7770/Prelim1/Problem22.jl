@@ -501,8 +501,8 @@ abs_mag1 = LinearAlgebra.norm(W1)
 abs_mag2 = LinearAlgebra.norm(W2)
 abs_mag3 = LinearAlgebra.norm(W3)
 #A scaled matrix of
-sol_w1 =network_w1 / abs_mag1
-sol_w2 =network_w2 / abs_mag2
-sol_w3 = network_w3 / abs_mag3
+println(sol_w1 =network_w1 / abs_mag1)
+println(sol_w2 =network_w2 / abs_mag2)
+println(sol_w3 = network_w3 / abs_mag3)
 
 #Final solution

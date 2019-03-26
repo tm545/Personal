@@ -135,4 +135,4 @@ for n in 7:15
     Bounds_matrix[n,:] = [-1*lg_bound, lg_bound] #resetting that row
 end
 
-extreme_shadow_price = trans_rate / bl
+println(extreme_shadow_price = trans_rate / bl)
