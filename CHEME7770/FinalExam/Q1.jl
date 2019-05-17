@@ -41,3 +41,4 @@ errorbar(xdata,ydata,yerr=errs,fmt="o")
 plot(x,y)
 xlabel("3'-5'-AMP concentration [mM]")
 ylabel("PFK activity [uM/hr]")
+#As shown by the graph this model is good at describing the data.
