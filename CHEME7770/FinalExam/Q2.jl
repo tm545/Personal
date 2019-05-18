@@ -21,9 +21,13 @@ end
 figure(1)
 plot(u_1,f_1)
 plot(g_1,u_1)
+xlabel("U")
+ylabel("V")
 figure(2)
 plot(u_1,f_2)
 plot(g_2,u_1)
+xlabel("U")
+ylabel("V")
 #Streamplot Question2c
 minval = 0
 maxval = 12
@@ -44,8 +48,8 @@ xlabel("U")
 ylabel("V")
 #Evaluation for parts of Question 2d
 v_ss =(-1+41^(1/2))/2#Steady state value at n=1
-J = [-1 -10/(v_ss+1)^2; -10/(v_ss+1)^2 -1] #jacobian in the case of n=1
-J_2 = [-1 -40/25; -40/25 -1]#Jacobian in the case of n=2
+J = [-10/(v_ss+1)^2 -1;-1 -10/(v_ss+1)^2] #jacobian in the case of n=1
+J_2 = [-40/25 -1;-1 -40/25]#Jacobian in the case of n=2
 println(eigvals(J))#Just checking
 println(eigvals(J_2))#Just checking
 println((tr(J)+(tr(J)^2-4*det(J))^(1/2))/2)
